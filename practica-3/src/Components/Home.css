@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #000000; /* Color de fondo del nav */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 0;
+    position: fixed; /* Fijar el nav en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Mantenerlo por encima de otros elementos */
+    display: flex;
+    flex-direction: column; /* Alinear verticalmente */
+    align-items: center;
+  }
+  
+  .astronomia {
+    background-image: url("https://imgs.search.brave.com/G8c6bFBKd8WcOEeyWTWOtgR6PA0IdzflK3E4SXr6B8A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS81OC85/Ni9rcmp0bWkuanBn");
+    width: 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 0; /* Espaciado interno */
+    position: relative; /* Necesario para animar la posición */
+
+  }
+  
+  .astronomia a {
+    color: rgb(252, 252, 252); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    animation: move-left-right 3s ease-in-out infinite; /* Aplicar animación al texto */
+    display: inline-block;
+
+  }
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateX(50px); /* Se mueve hacia la derecha */
+    }
+    100% {
+      transform: translateX(0); /* Vuelve a la posición inicial */
+    }
+  }
+  
+  .menu {
+    background-image: url("https://imgs.search.brave.com/G8c6bFBKd8WcOEeyWTWOtgR6PA0IdzflK3E4SXr6B8A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS81OC85/Ni9rcmp0bWkuanBn");
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Línea o efecto entre secciones */
+  }
+  
+  .menu ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    display: inline-flex; /* Mostrar los elementos en línea */
+    gap: 15px; /* Espaciado entre elementos */
+  }
+  
+  .menu li {
+    padding: 10px 15px; /* Espaciado interno */
+    background-image: url("https://imgs.search.brave.com/8jFEiOpKXpTL2vnUa20MLJVMqzx4iAepYYwssIgxHE8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDMxNzIy/ODguanBn");
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .menu a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+  }
+  
+  .menu a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .left-list {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0;
+    margin-left: 0px;
+    color: #333;
+    width: 200px; /* Ancho de la caja */
+    border: 1px solid #ccc; /* Borde exterior de la caja */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evita el desbordamiento del contenido */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #e9e9e9; /* Fondo blanco */
+  }
+  
+  .left-li {
+    padding: 10px 5px 10px 10px; /* Espaciado interno */
+    border-bottom: 1px solid #eee; /* Línea divisoria entre los elementos */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  }
+  
+  .left-li:last-child {
+    border-bottom: none; /* Elimina la línea inferior del último elemento */
+  }
+  
+  .right-list {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0;
+    margin: 10;
+    left: 10;
+    width: 300px; /* Ajusta el ancho de la caja */
+    border: 1px solid #ccc; /* Añade un borde */
+    border-radius:20px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  }
+  
+  .right-img {
+    width: 100%; /* La imagen ocupa el ancho completo */
+    height: auto; /* Mantiene la proporción */
+  }
+  
+  .right-li {
+    display: flex; /* Activa flexbox para los elementos internos */
+    align-items: left; /* Alinea verticalmente los elementos */
+    padding: 10px;
+    border-top: 1px solid #eee; /* Línea divisoria */
+  }
+  
+  .right-li:first-of-type {
+    border-top: none; /* Quita el borde superior del primer elemento */
+  }
+  
+  .right-li p {
+    margin: 0 0 0 10px; /* Espaciado a la izquierda del texto */
+    font-size: 14px;
+    color: #555; /* Color de texto */
+  }
+  .uni-img {
+    width: 1%;
+    height: auto;
+  }
+  section {
+    display: flex;
+    justify-content: center;  /* Centra las imágenes horizontalmente */
+    align-items: center;  /* Centra las imágenes verticalmente */
+    width: 600px;
+    height: 500px;
+    margin: 160px auto;  /* Centra el contenedor en la página con un margen superior */
+    padding: 20px;  /* Espaciado interno */
+    border: 3px solid #ddd;  /* Borde alrededor del contenedor */
+    border-radius: 50px;  /* Bordes redondeados para el contenedor */
+    background-image: url("https://images.unsplash.com/photo-1484744358184-a8ce5e4af7ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHVuaXZlcnNlfGVufDB8fDB8fHww");
+    background-size: cover;  /* Hace que la imagen cubra toda el área del contenedor */
+    background-position: center;  /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita si no cubre todo el área */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor del contenedor */
+  }
+  
+  section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    border-radius: 8px;  /* Bordes redondeados para las imágenes */
+  }
+  
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+.div-right{
+  margin-right: 10px;
+  right: 100;
+  width: 10%;
+}
+.li-h1 {
+  font-size: 15px; /* Reduce el tamaño de la fuente */
+  color: #333; /* Color del texto */
+  background-color: #f0f0f0; /* Fondo gris claro */
+  padding: 6px 20px; /* Espaciado interno alrededor del texto */
+  margin: 0; /* Elimina márgenes externos */
+  border: 1px solid #5a5858; /* Borde gris más oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centra el texto */
+  display: inline-block; /* Ajusta el ancho al contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 85%;
+}
+.right-li p a:not(:last-child)::after {
+  content: " | "; /* Cambia el símbolo aquí, por ejemplo, "-" o "•" */
+  margin-left: 5px; /* Espacio antes del separador */
+}
+
+.right-li p a {
+  margin-right: 5px; /* Espacio después del separador */
+}
+.lo-visto {
+  background-color: #e0e0e0; /* Gris claro */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 0px; /* Espaciado interno */
+  margin: 8px auto; /* Margen superior/inferior y centrado horizontal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 80%; /* Ancho del rectángulo */
+  max-width: 600px; /* Ancho máximo */
+  text-align: center; /* Centrar el contenido dentro */
+}

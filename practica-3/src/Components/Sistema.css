@@ -1,0 +1,50 @@
+body {
+    color: black;
+    font-family: Arial, sans-serif;
+    background-color: fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .universo-1-title {
+    text-align: center; /* Centra el título */
+    font-size: 28px;
+    margin-bottom: 20px; /* Espacio entre el título y el contenedor */
+    color: #2c3e50;
+    padding-top: 50px;
+
+  }
+  
+  .universo-1 {
+    background-image: linear-gradient(black,rgb(24, 24, 24),rgb(44, 44, 44));
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espaciado entre texto e imagen */
+    color: rgb(255, 255, 255);
+  }
+  
+  .universo-1 p {
+    flex: 1;
+  }
+  
+  .universo-1 img {
+    max-width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+  }
+  .custom-line {
+    border: none; /* Elimina el borde predeterminado */
+    height: 2px; /* Grosor de la línea */
+    background-color: #2c3e50; /* Color de la línea */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+  }
+  .universo-title {
+    transition: text-shadow 0.3s ease; /* Para un resplandor suave */
+  }
+  
+  .universo-title:hover {
+    text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue; /* Efecto de resplandor azul */
+  }  
